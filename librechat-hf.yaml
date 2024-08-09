@@ -29,4 +29,3 @@ endpoints:
             deploymentName: "gpt-4o"
           gpt-4o-mini:
             deploymentName: "gpt-4o-mini"
-
