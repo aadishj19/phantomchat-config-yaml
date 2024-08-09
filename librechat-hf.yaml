@@ -15,6 +15,20 @@ registration:
 
 endpoints:
   custom:
+      azureOpenAI:
+        titleModel: "gpt-4o"  # Default title model for Azure
+        plugins: true
+        assistants: true
+        groups:
+          - group: "rg-aadishj19ai"  # Azure resource group name
+            piKey: "${AZURE_OPENAI_API_KEY}"  # Reference to the environment variable for the API key
+            instanceName: "${AZURE_OPENAI_INSTANCE}"  # Reference to the environment variable for the instance name
+            version: "2024-05-13"
+            models:
+              gpt-4o:
+                deploymentName: "phantomchat"
+                version: "2024-05-13"
+
     # Anyscale
     # # Model list: https://console.anyscale.com/v2/playground
     - name: "Anyscale"
