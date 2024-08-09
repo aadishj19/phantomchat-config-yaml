@@ -14,18 +14,19 @@ registration:
   socialLogins: ["discord", "facebook", "github", "google", "openid"]
 
 endpoints:
-  custom:
-      azureOpenAI:
-        titleModel: "gpt-4o"  # Default title model for Azure
-        plugins: true
-        assistants: true
-        groups:
-          - group: "phantom-chat"  # Azure resource group name
-            apiKey: "${AZURE_OPENAI_API_KEY}"  # Reference to the environment variable for the API key
-            instanceName: "${INSTANCE_NAME}"   # Reference to the environment variable for the instance name
-            version: "2024-05-01-preview"
-            models:
-              gpt-4o:
-                deploymentName: "gpt-4o"
-              gpt-4o-mini:
-                deploymentName: "gpt-4o-mini"
+  azureOpenAI:
+    titleModel: "gpt-4o"  # Default title model for Azure
+    titleConvo: true  # Enable titling for conversations
+    plugins: true  # Enable plugins if needed
+    assistants: true  # Enable assistants if needed
+    groups:
+      - group: "phantom-chat"  # Azure resource group name
+        apiKey: "${AZURE_OPENAI_API_KEY}"  # Reference to the environment variable for the API key
+        instanceName: "${INSTANCE_NAME}"  # Reference to the environment variable for the instance name
+        version: "2024-05-01-preview"
+        models:
+          gpt-4o:
+            deploymentName: "gpt-4o"
+          gpt-4o-mini:
+            deploymentName: "gpt-4o-mini"
+
