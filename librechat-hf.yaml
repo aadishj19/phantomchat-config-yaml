@@ -22,7 +22,7 @@ endpoints:
         groups:
           - group: "phantom-chat"  # Azure resource group name
             apiKey: "${AZURE_OPENAI_API_KEY}"  # Reference to the environment variable for the API key
-            instanceName: "phantom-chat"  # Reference to the environment variable for the instance name
+            instanceName: "${INSTANCE_NAME}"   # Reference to the environment variable for the instance name
             version: "2024-05-01-preview"
             models:
               gpt-4o:
