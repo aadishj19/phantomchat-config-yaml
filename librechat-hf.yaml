@@ -21,8 +21,8 @@ endpoints:
         assistants: true
         groups:
           - group: "rg-aadishj19ai"  # Azure resource group name
-            piKey: "${AZURE_OPENAI_API_KEY}"  # Reference to the environment variable for the API key
-            instanceName: "${AZURE_OPENAI_INSTANCE}"  # Reference to the environment variable for the instance name
+            apiKey: "${AZURE_OPENAI_API_KEY}"  # Reference to the environment variable for the API key
+            instanceName: "rg-aadishj19ai"  # Reference to the environment variable for the instance name
             version: "2024-05-13"
             models:
               gpt-4o:
