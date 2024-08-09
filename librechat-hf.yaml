@@ -24,14 +24,11 @@ endpoints:
             apiKey: "${AZURE_OPENAI_API_KEY}"  # Reference to the environment variable for the API key
             instanceName: "rg-aadishj19ai"  # Reference to the environment variable for the instance name
             version: "2024-05-13"
-            baseURL: "https://phantomchat.openai.azure.com/"
             models:
               gpt-4o:
                 deploymentName: "phantomchat"
-                version: "2024-05-13"
               gpt-4o-mini:
                 deployementName: "gpt-4o-mini"
-                version: "2024-07-18"
 
     # Anyscale
     # # Model list: https://console.anyscale.com/v2/playground
