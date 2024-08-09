@@ -20,13 +20,13 @@ endpoints:
         plugins: true
         assistants: true
         groups:
-          - group: "phantomchat"  # Azure resource group name
+          - group: "phantom-chat"  # Azure resource group name
             apiKey: "${AZURE_OPENAI_API_KEY}"  # Reference to the environment variable for the API key
-            instanceName: "phantomchat"  # Reference to the environment variable for the instance name
+            instanceName: "phantom-chat"  # Reference to the environment variable for the instance name
             version: "2024-05-01-preview"
             models:
               gpt-4o:
-                deploymentName: "phantomchat"
+                deploymentName: "gpt-4o"
               gpt-4o-mini:
                 deployementName: "gpt-4o-mini"
 
